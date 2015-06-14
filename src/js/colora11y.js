@@ -24,17 +24,17 @@
     }
 
     function getLuminance(color) {
-        var red, g, b;
+        var red, green, b;
         if(color.length == 3) {
             red = getsRGB(color.substring(0,1) + color.substring(0,1));
-            g = getsRGB(color.substring(1,2) + color.substring(1,2));
+            green = getsRGB(color.substring(1,2) + color.substring(1,2));
             b = getsRGB(color.substring(2,3) + color.substring(2,3));
         } else {
             red = getsRGB(color.substring(0,2));
-            g = getsRGB(color.substring(2,4));
+            green = getsRGB(color.substring(2,4));
             b = getsRGB(color.substring(4,6));
         }
-        return (0.2126 * red + 0.7152 * g + 0.0722 * b);
+        return (0.2126 * red + 0.7152 * green + 0.0722 * b);
     }
 
     function getsRGB(color) {
