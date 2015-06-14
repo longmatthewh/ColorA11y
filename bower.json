@@ -1,0 +1,8 @@
+{
+  "name": "colora11y",
+  "main": "src/js/colora11y.js",
+  "ignore" : [
+      "/*",
+      "!src/js/*"
+  ]
+}
