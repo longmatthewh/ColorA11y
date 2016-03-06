@@ -1,8 +1,7 @@
 {
   "name": "colora11y",
-  "main": "src/js/colora11y.js",
-  "ignore" : [
-      "/*",
-      "!src/js/*"
-  ]
+  "main": "dist/colora11y.min.js",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {}
 }
