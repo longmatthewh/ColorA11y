@@ -8,15 +8,15 @@ module.exports = function(grunt) {
                 banner: '/*! <%= pkg.name %> */\n'
             },
             build: {
-                src: 'src/js/<%= pkg.name %>.js',
-                dest: 'dist/<%= pkg.name %>.min.js'
+                src: '<%= pkg.name %>.js',
+                dest: '<%= pkg.name %>.min.js'
             }
         },
         jshint: {
-            all: ['src/js/<%= pkg.name %>.js']
+            all: ['<%= pkg.name %>.js']
         },
         jasmine: {
-            src: ['src/js/colora11y.js'],
+            src: ['colora11y.js'],
             options: {
                 specs: 'test/js/specs/colora11ySpec.js'
             }
