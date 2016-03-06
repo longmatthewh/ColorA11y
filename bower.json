@@ -1,13 +1,9 @@
 {
   "name": "colora11y",
   "main": "colora11y.js",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "license": "MIT",
   "dependencies": {},
   "keywords": ["util", "functional", "server", "client", "browser", "accessibility", "a11y", "color"],
-  "ignore" : ["test", "*.yml", ".*", "package.json", "Gruntfile.js", "_SpecRunner.html"],
-  "ignore" : [
-      "/*",
-      "!src/js/*"
-  ]
+  "ignore" : ["test", "*.yml", ".*", "package.json", "Gruntfile.js", "_SpecRunner.html"]
 }
