@@ -5,7 +5,7 @@
   "license": "MIT",
   "dependencies": {},
   "keywords": ["util", "functional", "server", "client", "browser", "accessibility", "a11y", "color"],
-  "ignore" : ["test", "*.yml", ".*", "package.json", "Gruntfile.js"],
+  "ignore" : ["test", "*.yml", ".*", "package.json", "Gruntfile.js", "_SpecRunner.html"],
   "ignore" : [
       "/*",
       "!src/js/*"
