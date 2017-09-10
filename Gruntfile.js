@@ -13,10 +13,15 @@ module.exports = function(grunt) {
             }
         },
         jshint: {
+            options: {
+                reporter: '',
+                reporterOutput: '',
+                jshintrc:true
+            },
             all: ['<%= pkg.name %>.js']
         },
         jasmine: {
-            src: ['colora11y.js'],
+            src: ['<%= pkg.name %>.js'],
             options: {
                 specs: 'test/js/specs/colora11ySpec.js'
             }

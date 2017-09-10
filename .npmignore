@@ -1,0 +1,8 @@
+.idea
+gulpfile.js
+.grunt
+.DS_Store
+.travis.yml
+Gruntfile.js
+test
+bower.json

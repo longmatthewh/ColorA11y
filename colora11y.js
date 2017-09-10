@@ -25,7 +25,7 @@
 
     function getLuminance(color) {
         var red, green, blue;
-        if(color.length == 3) {
+        if(color.length === 3) {
             red = getsRGB(color.substring(0,1) + color.substring(0,1));
             green = getsRGB(color.substring(1,2) + color.substring(1,2));
             blue = getsRGB(color.substring(2,3) + color.substring(2,3));
