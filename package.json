@@ -1,11 +1,18 @@
 {
   "name": "colora11y",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "repository": {
     "type": "git",
     "url": "https://github.com/longmatthewh/ColorA11y.git"
   },
   "license": "MIT",
+  "keywords": [
+    "accessibility",
+    "a11y",
+    "color contrast",
+    "WCAG"
+  ],
+  "author": "Matt Long <longmatthewh@gmail.com>",
   "main": "./colora11y.js",
   "devDependencies": {
     "grunt": "^0.4.5",
