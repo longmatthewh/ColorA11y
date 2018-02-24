@@ -1,3 +1,5 @@
+var colora11y = require('../../../colora11y.js');
+
 describe('colora11y', function() {
     it('ratio is 21:1 for black on white', function() {
         var compliance = colora11y.calcContrastCompliance('#000000', '#ffffff');
@@ -40,5 +42,10 @@ describe('colora11y', function() {
         expect(colora11y.calcContrastCompliance('#000', '#000').ratio).toBe('1:1');
         expect(colora11y.calcContrastCompliance('#666', '#fff').ratio).toBe('5.74:1');
         expect(colora11y.calcContrastCompliance('#888', '#fff').ratio).toBe('3.54:1');
+    });
+
+    it('works with rgb', function() {
+        expect(colora11y.calcContrastCompliance('rgb(0, 0,0)', 'rgb(255,255,255)').ratio).toBe('21:1');
+        expect(colora11y.calcContrastCompliance('rgb(0, 0, 0)', 'rgb(0,0, 0)').ratio).toBe('1:1');
     });
 });
