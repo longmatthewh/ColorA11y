@@ -1,6 +1,6 @@
 {
   "name": "colora11y",
-  "version": "1.2.1",
+  "version": "1.2.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/longmatthewh/ColorA11y.git"
@@ -21,6 +21,7 @@
     "eslint": "^4.18.1",
     "eslint-config-google": "^0.9.1",
     "jasmine": "^3.0.0",
+    "nodemon": "^1.15.1",
     "uglify-js": "^3.3.11"
   },
   "scripts": {
@@ -28,6 +29,7 @@
     "babel": "babel colora11y.js --out-file colora11y.min.js",
     "uglify": "uglifyjs colora11y.min.js -o colora11y.min.js -c -m",
     "build": "npm run babel && npm run uglify",
-    "test": "npm run eslint && jasmine JASMINE_CONFIG_PATH=jasmine.json"
+    "test": "npm run eslint && jasmine JASMINE_CONFIG_PATH=jasmine.json",
+    "watch:js": "nodemon -e js --ignore 'colora11y.min.js' -x \"npm run test && npm run babel\""
   }
 }

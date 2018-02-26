@@ -1,7 +1,7 @@
 {
   "name": "colora11y",
   "main": "colora11y.js",
-  "version": "1.2.1",
+  "version": "1.2.3",
   "license": "MIT",
   "dependencies": {},
   "keywords": ["util", "functional", "server", "client", "browser", "accessibility", "a11y", "color"],

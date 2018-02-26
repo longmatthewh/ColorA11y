@@ -10,11 +10,11 @@
         compliance.aaa.large.pass = passFail;
     };
 
-    let getLuminanceFromRGB = (rgbColor) => {
+    let getLuminanceFromRGB = ({red, green, blue}) => {
         return (
-            0.2126 * getsRGB(rgbColor.red) +
-            0.7152 * getsRGB(rgbColor.green) +
-            0.0722 * getsRGB(rgbColor.blue)
+            0.2126 * getsRGB(red) +
+            0.7152 * getsRGB(green) +
+            0.0722 * getsRGB(blue)
         );
     };
 

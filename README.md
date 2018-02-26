@@ -8,7 +8,8 @@ Usage
 -------
 ```js
 colora11y.calcContrastCompliance('#CCCCCC', '00FF00');
-
+// also supports rgb
+colora11y.calcContrastCompliance('rgb(204,204,204)', '00FF00');
 /*
 would return the following:
 {
