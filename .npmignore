@@ -1,8 +1,8 @@
 .idea
-gulpfile.js
-.grunt
 .DS_Store
 .travis.yml
-Gruntfile.js
 test
 bower.json
+.babelrc
+.eslintrc.js
+jasmine.json

@@ -1,6 +1,6 @@
 {
   "name": "colora11y",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/longmatthewh/ColorA11y.git"
@@ -28,6 +28,6 @@
     "babel": "babel colora11y.js --out-file colora11y.min.js",
     "uglify": "uglifyjs colora11y.min.js -o colora11y.min.js -c -m",
     "build": "npm run babel && npm run uglify",
-    "test": "npm run eslint && jasmine"
+    "test": "npm run eslint && jasmine JASMINE_CONFIG_PATH=jasmine.json"
   }
 }

@@ -36,12 +36,8 @@
 
     let fromRgbStr = (color) => {
         let matchColors = colorTypeConverter.rgbStr.pattern;
-        let match = matchColors.exec(color);
-        return {
-            red: match[1],
-            green: match[2],
-            blue: match[3],
-        };
+        let [, red, green, blue] = matchColors.exec(color);
+        return {red, green, blue};
     };
 
     const colorTypeConverter = {
