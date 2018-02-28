@@ -29,7 +29,7 @@
   "scripts": {
     "eslint": "eslint colora11y.js",
     "build": "babel colora11y.js | uglifyjs -c -m > colora11y.min.js",
-    "test": "npm run eslint && istanbul cover jasmine JASMINE_CONFIG_PATH=jasmine.json",
+    "test": "npm run eslint && istanbul cover jasmine JASMINE_CONFIG_PATH=jasmine.json && istanbul check-coverage --lines 100 --functions 100 --branches 100",
     "watch:js": "nodemon -e js --ignore 'colora11y.min.js' -x \"npm run test && npm run babel\""
   }
 }
