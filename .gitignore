@@ -3,3 +3,4 @@ _SpecRunner.html
 .idea
 .grunt
 .DS_Store
+/coverage/
