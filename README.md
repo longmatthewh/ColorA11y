@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/longmatthewh/ColorA11y.svg?branch=master)](https://travis-ci.org/longmatthewh/ColorA11y)
+[![Build Status](https://travis-ci.org/longmatthewh/ColorA11y.svg?branch=master)](https://travis-ci.org/longmatthewh/ColorA11y) [![Coverage Status](https://coveralls.io/repos/github/longmatthewh/ColorA11y/badge.svg?branch=master)](https://coveralls.io/github/longmatthewh/ColorA11y?branch=master)
 
 colora11y
 =============
