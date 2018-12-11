@@ -6,6 +6,7 @@ describe('colora11y', function() {
         expect(compliance.ratio).toBe('21:1');
         expect(compliance.aa.normal.pass).toBe(true);
         expect(compliance.aa.large.pass).toBe(true);
+        expect(compliance.aa.nontext.pass).toBe(true);
         expect(compliance.aaa.normal.pass).toBe(true);
         expect(compliance.aaa.large.pass).toBe(true);
     });
@@ -15,6 +16,7 @@ describe('colora11y', function() {
         expect(compliance.ratio).toBe('1:1');
         expect(compliance.aa.normal.pass).toBe(false);
         expect(compliance.aa.large.pass).toBe(false);
+        expect(compliance.aa.nontext.pass).toBe(false);
         expect(compliance.aaa.normal.pass).toBe(false);
         expect(compliance.aaa.large.pass).toBe(false);
     });
@@ -24,6 +26,7 @@ describe('colora11y', function() {
         expect(compliance.ratio).toBe('5.74:1');
         expect(compliance.aa.normal.pass).toBe(true);
         expect(compliance.aa.large.pass).toBe(true);
+        expect(compliance.aa.nontext.pass).toBe(true);
         expect(compliance.aaa.normal.pass).toBe(false);
         expect(compliance.aaa.large.pass).toBe(true);
     });
@@ -33,6 +36,7 @@ describe('colora11y', function() {
         expect(compliance.ratio).toBe('3.54:1');
         expect(compliance.aa.normal.pass).toBe(false);
         expect(compliance.aa.large.pass).toBe(true);
+        expect(compliance.aa.nontext.pass).toBe(true);
         expect(compliance.aaa.normal.pass).toBe(false);
         expect(compliance.aaa.large.pass).toBe(false);
     });

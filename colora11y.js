@@ -3,6 +3,7 @@
 
     const NORM_AA_BIG_AAA = 4.5;
     const BIG_AA = 3;
+    const NON_TEXT_AA = 3;
     const NORM_AAA = 7;
 
     let normAAbigAAAPass = (compliance, passFail) => {
@@ -83,6 +84,9 @@
                 large: {
                     min: BIG_AA + ':1',
                 },
+                nontext: {
+                    min: NON_TEXT_AA + ':1',
+                },
             },
             aaa: {
                 normal: {
@@ -108,6 +112,7 @@
         let compliance = createCompliance();
         normAAbigAAAPass(compliance, ratio >= NORM_AA_BIG_AAA);
         compliance.aa.large.pass = (ratio >= BIG_AA);
+        compliance.aa.nontext.pass = (ratio >= NON_TEXT_AA);
         compliance.aaa.normal.pass = (ratio >= NORM_AAA);
         compliance.ratio = (Math.round(ratio * 100) / 100) + ':1';
         return compliance;

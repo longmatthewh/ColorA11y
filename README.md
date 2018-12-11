@@ -21,6 +21,10 @@ would return the following:
         "large":{
             "min":"3:1",
             "pass":false
+        },
+        "nontext":{
+            "min":"3:1",
+            "pass":false
         }
     },
     "aaa":{

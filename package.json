@@ -1,6 +1,6 @@
 {
   "name": "colora11y",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/longmatthewh/ColorA11y.git"
@@ -16,20 +16,20 @@
   "main": "./colora11y.js",
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-es2015": "^6.24.1",
-    "coveralls": "^3.0.0",
-    "eslint": "^4.18.1",
+    "coveralls": "^3.0.2",
+    "eslint": "^4.19.1",
     "eslint-config-google": "^0.9.1",
     "istanbul": "^0.4.5",
-    "jasmine": "^3.0.0",
-    "nodemon": "^1.15.1",
-    "uglify-js": "^3.3.11"
+    "jasmine": "^3.3.1",
+    "nodemon": "^1.18.8",
+    "uglify-js": "^3.4.9"
   },
   "scripts": {
     "eslint": "eslint colora11y.js",
     "build": "babel colora11y.js | uglifyjs -c -m > colora11y.min.js",
     "test": "npm run eslint && istanbul cover jasmine JASMINE_CONFIG_PATH=jasmine.json && istanbul check-coverage --lines 100 --functions 100 --branches 100",
-    "watch:js": "nodemon -e js --ignore 'colora11y.min.js' -x \"npm run test && npm run babel\""
+    "watch:js": "nodemon -e js --ignore 'colora11y.min.js' -x \"npm run test && npm run build\""
   }
 }
